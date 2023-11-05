@@ -1,0 +1,32 @@
+{
+  "name": "simple-task-app",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Simple Task App",
+  "main": "./dist/main.js",
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "tsc",
+    "dev": "concurrently 'tsc -w' 'electron ./dist/main.js'",
+    "forge:start": "electron-forge start",
+    "forge:package": "electron-forge package",
+    "forge:make": "electron-forge make"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.4.2",
+    "@electron-forge/maker-deb": "^6.4.2",
+    "@electron-forge/maker-rpm": "^6.4.2",
+    "@electron-forge/maker-squirrel": "^6.4.2",
+    "@electron-forge/maker-zip": "^6.4.2",
+    "@electron-forge/plugin-auto-unpack-natives": "^6.4.2",
+    "concurrently": "^8.2.2",
+    "electron": "^27.0.3",
+    "electron-reloader": "^1.2.3",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vite-plugin-electron-renderer": "^0.14.5"
+  }
+}
